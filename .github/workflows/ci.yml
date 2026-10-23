@@ -29,7 +29,7 @@ jobs:
       - name: Run Automated Test Suites
         run: mvn test
 
-    deploy-staging:
+  deploy-staging:
     needs: build-and-validate
     runs-on: ubuntu-latest
     environment: staging
