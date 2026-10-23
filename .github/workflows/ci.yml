@@ -42,3 +42,7 @@ jobs:
         run: |
           echo "Approval granted! Deploying to staging stack..."
           docker compose up -d
+      - name: Deploy to Staging Container
+        run: |
+          echo "Approval granted! Deploying to staging stack..."
+          docker compose -f maven-automation-pipeline/docker-compose.yml up -d
